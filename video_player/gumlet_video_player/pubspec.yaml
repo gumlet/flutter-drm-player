@@ -1,0 +1,28 @@
+name: gumlet_video_player
+description: Flutter plugin for displaying inline video with other Flutter
+  widgets on Android, iOS, and web.
+repository: https://github.com/gumlet/flutter-drm-player/tree/main/video_player/gumlet_video_player
+issue_tracker: https://github.com/gumlet/flutter-drm-player/issues
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+  flutter: ">=2.10.0"
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        default_package: gumlet_video_player_web
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_inappwebview: 5.7.2+3
+
+  gumlet_video_player_platform_interface: 1.0.0+1
+  gumlet_video_player_web: 1.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

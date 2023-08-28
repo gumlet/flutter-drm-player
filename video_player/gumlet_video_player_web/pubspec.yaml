@@ -1,0 +1,30 @@
+name: gumlet_video_player_web
+description: Web platform implementation of video_player.
+repository: https://github.com/gumlet/flutter-drm-player/tree/main/video_player/gumlet_video_player_web
+issue_tracker: https://github.com/gumlet/flutter-drm-player/issues
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.8.0"
+
+flutter:
+  plugin:
+    implements: gumlet_video_player
+    platforms:
+      web:
+        pluginClass: VideoPlayerPlugin
+        fileName: video_player_web.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  gumlet_video_player_platform_interface: 1.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
